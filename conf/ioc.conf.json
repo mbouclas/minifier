@@ -1,6 +1,6 @@
 {
     "defaultLang":"en",
-    "port": 3003,
+    "port": 8080,
     "app": {
         "dev": false,
         "devUrl": "http://hop.home.local",
