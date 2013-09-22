@@ -40,7 +40,7 @@ angular.module('mcmsServices', []).
         }
     }]).
     factory('socket', ['$rootScope', function($rootScope){
-    var socket = io.connect('http://localhost:3003');
+    var socket = io.connect('http://nodebox-33229.euw1.actionbox.io:8080');
         return {
             on: function (eventName, callback) {
                 socket.on(eventName, function () {
