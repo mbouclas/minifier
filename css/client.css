@@ -1,0 +1,36 @@
+.edit-links, .edit-content-links {
+position: absolute;
+z-index: 999;
+top: 0;
+right: 0;
+margin: 3px;
+padding: 5px 3px;
+background:  #FFF;
+font-family: "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+}
+
+.edit-content { position:relative;}
+.tpl-content {
+border: 1px dashed #900;
+cursor: pointer;
+padding: 4px;
+display: block;
+position:relative;
+}
+
+.overlay-container .cart-text {
+    bottom: 0;
+    color: #FFFFEE;
+    height: 350px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 620px;
+	font-size:14px;
+}
+.overlay-container .cart-text .inner {  height:350px; width:100%;  position:relative; color:black; background:white; }
+.overlay-container .cart-text .inner h1 { color:#143856; font-size:22px; text-align:center; padding-top:40px; position:relative;font-weight:normal; }
+.overlay-container .cart-text .inner h2 { color:#ed1c24; font:26px; position:absolute; bottom:100px; left:240px; font-weight:normal; }
+.overlay-container .cart-text .inner .cart { position:absolute; width:500px; left:}

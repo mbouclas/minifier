@@ -1,0 +1,20 @@
+{
+    "defaultLang":"en",
+    "port": 3003,
+    "app": {
+        "dev": false,
+        "devUrl": "http://hop.home.local",
+        "url": "http://hop.net-tomorrow.com/"
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "houseofpink",
+        "multipleStatements": true
+    },
+    "mongoDB": {
+        "url": "localhost/dekoho"
+    },
+    "perPage": 10
+}
