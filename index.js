@@ -17,11 +17,22 @@ app.configure(function() {
     app.use(express.session({
         maxAge: new Date(Date.now() + 3600000)
     }));
+
+    // disable layout
+    app.set("view options", {layout: false});
+    app.register('.html', {
+        compile: function(str, options){
+            return function(locals){
+                return str;
+            };
+        }
+    });
     app.use(app.router)
 });
 
+
 app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/index.html');
+    res.render("index.html");
 });
 
 var server = app.listen(conf.port);
