@@ -18,15 +18,7 @@ app.configure(function() {
         maxAge: new Date(Date.now() + 3600000)
     }));
 
-    // disable layout
-    app.set("view options", {layout: false});
-    app.register('.html', {
-        compile: function(str, options){
-            return function(locals){
-                return str;
-            };
-        }
-    });
+
     app.use(app.router)
 });
 
