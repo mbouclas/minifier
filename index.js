@@ -21,8 +21,9 @@ app.configure(function() {
 });
 
 app.get('/', function (req, res) {
-    res.send('here');
+    res.sendfile(__dirname + '/index.html');
 });
+
 var server = app.listen(conf.port);
 var io = require('socket.io').listen(server);
 
